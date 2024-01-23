@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="shortcut icon"
+      href="Oxygen-Icons.org-Oxygen-Status-weather-clear.256.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--Font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--js-->
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-box">
+          <input type="text" id="input-box" placeholder="Enter your Location" />
+          <button id="search">🔍</button>
+        </div>
+        <div class="weather-app" style="display: none">
+          <img src="clear.png" alt="img" class="weather-img" />
+
+          <div class="weather-box">
+            <p class="temp">0 <sup>°C</sup></p>
+            <p class="description">Clear</p>
+          </div>
+          <div class="weather-detail">
+            <div class="humidity">
+              <i class="fa-sharp fa-solid fa-droplet"></i>
+              <div class="text">
+                <span id="humid">45%</span>
+                <p>humidity</p>
+              </div>
+            </div>
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <div class="text">
+                <span id="wind-speed">45Km/hr</span>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-not-found" style="display: none">
+          <h1>Sorry, Location Not Found!</h1>
+          <img src="404.png" alt="img" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
